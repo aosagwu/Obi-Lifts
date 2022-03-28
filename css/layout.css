@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212121 !important;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+header {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar-brand, .nav-link {
+    color: #FFFB00;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: white;
+}
