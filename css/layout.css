@@ -97,7 +97,7 @@ button.navbar-toggler {
 #calculator {
     margin: 0;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 125px;
 }
 
 #calculator h1 {
@@ -134,7 +134,7 @@ button.navbar-toggler {
     background-image: url("../img/black-background-01.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 }
 
 #request h1 {
