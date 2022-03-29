@@ -61,10 +61,10 @@
         </div>
 
         <div id="cal" class="row justify-content-center">
-            <div class="col-md-8 text-center">
+            <div class="col-md-7 text-center">
                 <div class="tile">
-                    <p>AN ADAPTATION OF THE VIRTUVIAN MODEL OF GENETICS</p>
-                    
+                    <p>AN ADAPTATION OF<br>THE VIRTUVIAN MODEL OF GENETICS</p>
+
                     <select class="select input">
                         <option value="" selected="" disabled="" hidden="">HEIGHT</option>
                         <option></option>
@@ -120,8 +120,44 @@
                         <option></option>
                     </select>
 
-                    <button id="cal-btn" class="btn mt-4">CALCULATE</button>
+                    <a id="cal-btn" class="btn mt-4" href="#result">CALCULATE</a>
                     <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="result" class="row justify-content-center">
+            <div class="col-md-7 text-center mb-2">
+                <h1 id="result-value">00</h1>
+                <p>GENETIC MODEL SCORE</p>
+            </div>
+
+            <div class="col-md-7 text-center">
+                <div class="tile">
+                    <div class="input-group">
+                        <span class="input-group-text">MUSCLE<br>MASS</span>
+                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                    </div>
+
+                    <div class="input-group mt-4">
+                        <span class="input-group-text">BONE<br>STRUCTURE</span>
+                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                    </div>
+
+                    <div class="input-group mt-4">
+                        <span class="input-group-text">MUSCLE<br>INSERTION</span>
+                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                    </div>
+
+                    <div class="input-group mt-4">
+                        <span class="input-group-text">BODY FAT<br>DISTRI.</span>
+                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                    </div>
+
+                    <div class="input-group mt-4">
+                        <span class="input-group-text">METABOLISM</span>
+                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,5 +183,6 @@
                 <p class="text-center">@Obi Lifts 2022</p>
             </div>
         </div>
+        <script src="js/genetic-calculator.js"></script>
     </body>
 </html>

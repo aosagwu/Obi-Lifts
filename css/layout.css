@@ -128,8 +128,6 @@ button.navbar-toggler {
 
 #calculator-btn:hover {
     background-color: black;
-    color: white;
-    transition: 1s;
 }
 
 #request {

@@ -38,6 +38,11 @@
     box-shadow: 0px 0px 20px black;
 }
 
+.tile p, #result p {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.25em;
+}
+
 .input {
     width: 100%;
     padding: 15px;
@@ -85,4 +90,40 @@
     background-color: black;
     color: white;
     transition: 1s;
+}
+
+#result {
+    margin: 0;
+    padding-bottom: 75px;
+}
+
+#result-value {
+    font-size: 7.5em;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.15em;
+}
+
+.bad {
+    color: red;
+    transition: .5s;
+}
+
+.average {
+    color: yellow;
+    transition: .5s;
+}
+
+.good {
+    color: #e3ff00;
+    transition: .5s;
+}
+
+.great {
+    color: lightgreen;
+    transition: .5s;
+}
+
+.excellent {
+    color: green;
+    transition: .5s;
 }
