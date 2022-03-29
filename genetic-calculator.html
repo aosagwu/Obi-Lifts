@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <!-- Title -->
-        <title>Genetic Calculator</title>
+        <title>Genetics Calculator</title>
 
         <!--Logo-->
         
@@ -60,11 +60,13 @@
             </div>
         </div>
 
-        <div id="calculator" class="row justify-content-center">
+        <div id="cal" class="row justify-content-center">
             <div class="col-md-8 text-center">
                 <div class="tile">
+                    <p>AN ADAPTATION OF THE VIRTUVIAN MODEL OF GENETICS</p>
+                    
                     <select class="select input">
-                        <option value="" selected="" disabled="" hidden="">SELECT A HEIGHT</option>
+                        <option value="" selected="" disabled="" hidden="">HEIGHT</option>
                         <option></option>
                     </select>
 
@@ -78,6 +80,16 @@
                         <input type="number" class="form-control input" value="15" min="3" max="40" step="1">
                     </div>
 
+                    <select class="select input mt-4">
+                        <option value="" selected="" disabled="" hidden="">BODY FAT DISTRIBUTION</option>
+                        <option></option>
+                    </select>
+
+                    <select class="select input mt-4">
+                        <option value="" selected="" disabled="" hidden="">METABOLISM</option>
+                        <option></option>
+                    </select>
+
                     <div class="input-group mt-4">
                         <span class="input-group-text">SHOULDER<br>WIDTH<br>(ANY UNIT)</span>
                         <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
@@ -87,7 +99,29 @@
                         <span class="input-group-text">WAIST WIDTH<br>(ANY UNIT)</span>
                         <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
                     </div>
+
+                    <select class="select input mt-4">
+                        <option value="" selected="" disabled="" hidden="">ABS INSERTION</option>
+                        <option></option>
+                    </select>
                     
+                    <select class="select input mt-4">
+                        <option value="" selected="" disabled="" hidden="">CHEST INSERTION</option>
+                        <option></option>
+                    </select>
+
+                    <select class="select input mt-4">
+                        <option value="" selected="" disabled="" hidden="">BICEP INSERTION</option>
+                        <option></option>
+                    </select>
+
+                    <select class="select input mt-4">
+                        <option value="" selected="" disabled="" hidden="">DELTOID INSERTION</option>
+                        <option></option>
+                    </select>
+
+                    <button id="cal-btn" class="btn mt-4">CALCULATE</button>
+                    <p></p>
                 </div>
             </div>
         </div>
