@@ -65,7 +65,7 @@
                 <div class="tile">
                     <p>AN ADAPTATION OF<br>THE VIRTUVIAN MODEL OF GENETICS</p>
 
-                    <select class="select input">
+                    <select id="height-select" class="select input">
                         <option value="" selected="" disabled="" hidden="">HEIGHT</option>
                         <option value="122">4 FEET 0 INCHES / 122 CM</option>
                         <option value="125">4 FEET 1 INCHES / 124.5 CM</option>
@@ -76,27 +76,69 @@
                         <option value="137">4 FEET 6 INCHES / 137 CM</option>
                         <option value="140">4 FEET 7 INCHES / 139.5 CM</option>
                         <option value="142">4 FEET 8 INCHES / 142 CM</option>
+                        <option value="145">4 FEET 9 INCHES / 145 CM</option>
+                        <option value="148">4 FEET 10 INCHES / 147.5 CM</option>
+                        <option value="150">4 FEET 11 INCHES / 150 CM</option>
+                        <option value="153">5 FEET 0 INCHES / 152.5 CM</option>
+                        <option value="155">5 FEET 1 INCHES / 155 CM</option>
+                        <option value="158">5 FEET 2 INCHES / 157.5 CM</option>
+                        <option value="160">5 FEET 3 INCHES / 160 CM</option>
+                        <option value="163">5 FEET 4 INCHES / 162.5 CM</option>
+                        <option value="165">5 FEET 5 INCHES / 165 CM</option>
+                        <option value="168">5 FEET 6 INCHES / 167.5 CM</option>
+                        <option value="170">5 FEET 7 INCHES / 170 CM</option>
+                        <option value="173">5 FEET 8 INCHES / 172.5 CM</option>
+                        <option value="176">5 FEET 9 INCHES / 175.5 CM</option>
+                        <option value="178">5 FEET 10 INCHES / 178 CM</option>
+                        <option value="181">5 FEET 11 INCHES / 180.5 CM</option>
+                        <option value="183">6 FEET 0 INCHES / 183 CM</option>
+                        <option value="186">6 FEET 1 INCHES / 185.5 CM</option>
+                        <option value="188">6 FEET 2 INCHES / 188 CM</option>
+                        <option value="191">6 FEET 3 INCHES / 190.5 CM</option>
+                        <option value="193">6 FEET 4 INCHES / 193 CM</option>
+                        <option value="196">6 FEET 5 INCHES / 195.5 CM</option>
+                        <option value="198">6 FEET 6 INCHES / 198 CM</option>
+                        <option value="201">6 FEET 7 INCHES / 200.5 CM</option>
+                        <option value="203">6 FEET 8 INCHES / 203 CM</option>
                     </select>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">WEIGHT (LBS)</span>
-                        <input type="number" class="form-control input" value="100" min="100" max="300" step="1">
+                        <input id="weight-input" type="number" class="form-control input" value="100" min="100" max="300" step="1">
                     </div>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">BODY FAT %</span>
-                        <input type="number" class="form-control input" value="15" min="3" max="40" step="1">
+                        <input id="bodyfat-input" type="number" class="form-control input" value="15" min="3" max="40" step="1">
                     </div>
 
                     <select class="select input mt-4">
                         <option value="" selected="" disabled="" hidden="">BODY FAT DISTRIBUTION</option>
-                        <option></option>
+                        <option value="">I LOSE / GAIN BODYFAT EVENLY ACROSS MY WHOLE BODY</option>
+                        <option value="">I STORE MORE FAT IN MY LOWER BODY</option>
+                        <option value="">SOMETHING IN THE MIDDLE, KIND OF A COMBO OF THE ABOVE OPTION</option>
+                        <option value="">I STORE MORE FAT IN MY UPPER BODY, BUT MY LEFS STAY LEAN</option>
+                        <option value="">MY BODY FAT LOOKS LIKE CRAP ON ME</option>
                     </select>
 
                     <select class="select input mt-4">
                         <option value="" selected="" disabled="" hidden="">METABOLISM</option>
-                        <option></option>
+                        <option value="">IT'S HARD FOR ME TO GO ABOVE 12% BODY FAT</option>
+                        <option value="">I GET LEAN FAIRLY EASILY</option>
+                        <option value="">FAT LOSS IS NORMAL FOR ME</option>
+                        <option value="">FAT LOSS IS HARD FOR ME</option>
+                        <option value="">I CAN'T LOSE FAT TO SAVE MY LIFE</option>
                     </select>
+
+                    <div class="input-group mt-4">
+                        <span class="input-group-text">WRIST<br>CIRCUMFERENCE<br>(INCHES)</span>
+                        <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
+                    </div>
+                    
+                    <div class="input-group mt-4">
+                        <span class="input-group-text">ANKLE<br>CIRCUMFERENCE<br>(INCHES)</span>
+                        <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
+                    </div>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">SHOULDER<br>WIDTH<br>(ANY UNIT)</span>
@@ -108,24 +150,45 @@
                         <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
                     </div>
 
-                    <select class="select input mt-4">
+                    <select id="abs-select" class="select input mt-4">
                         <option value="" selected="" disabled="" hidden="">ABS INSERTION</option>
-                        <option></option>
+                        <option value="10">8-PACK, PERFECTLY SYMMETRICAL</option>
+                        <option value="9">6-PACK, PERFECTLY SYMMETRICAL</option>
+                        <option value="6">4-PACK, PERFECTLY SYMMETRICAL</option>
+                        <option value="8">6-PACK, AVERAGE</option>
+                        <option value="5">4-PACK, AVERAGE</option>
+                        <option value="4">6-PACK, ASSYMETRICAL</option>
+                        <option value="2">4-PACK, ASSYMETRICAL</option>
+                        <option value="0">VERY ASSYMETRICAL</option>
                     </select>
                     
-                    <select class="select input mt-4">
+                    <select id="chest-select" class="select input mt-4">
                         <option value="" selected="" disabled="" hidden="">CHEST INSERTION</option>
-                        <option></option>
+                        <option value="10">FULL, SYMMETRICAL, BIG, OVERALL PREFECT CHEST</option>
+                        <option value="8">GOOD, SYMMETRICAL, BUT NOT VERY 3D OR "POPPING"</option>
+                        <option value="6">GOOD BUT THE UPPER CHEST NEEDS MORE DEVELOPMENT</option>
+                        <option value="5">CHEST IS AVERAGE</option>
+                        <option value="4">CHEST IS NOT BAD BUT ONE PEC IS BETTER THAN THE OTHER</option>
+                        <option value="2">SMALL OVERALL, MISMATCHED CHEST AND LAGGING UPPER CHEST</option>
+                        <option value="0">CHEST IS NOT DEVELOPMENT</option>
                     </select>
 
-                    <select class="select input mt-4">
+                    <select id="bicep-select" class="select input mt-4">
                         <option value="" selected="" disabled="" hidden="">BICEP INSERTION</option>
-                        <option></option>
+                        <option value="5">HIGH BICEP PEAK AND LONG MUSCLE BELLIES</option>
+                        <option value="4">PRETTY GOOD BICEPS AND BIG AND FULL MUSCLE BELLIES</option>
+                        <option value="2.5">AVERAGE, OKAY BICEP PEAK</option>
+                        <option value="1">SMALL BICEP WITH SHORT MUSCLE BELLIES</option>
+                        <option value="0">NO DEVELOPMENT WHATSOEVER</option>
                     </select>
 
-                    <select class="select input mt-4">
+                    <select id="deltoid-select" class="select input mt-4">
                         <option value="" selected="" disabled="" hidden="">DELTOID INSERTION</option>
-                        <option></option>
+                        <option value="5">BOWLING BALLS SHOULDERS</option>
+                        <option value="4">PRETTY GOOD DELTIODS, ROUND AND WIDE</option>
+                        <option value="2.5">AVERAGE DELTOIDS</option>
+                        <option value="1">NOT VERY GOOD DELTOIDS. NEEDS WORK</option>
+                        <option value="0">NO DEVELOPMENT WHATSOEVER</option>
                     </select>
 
                     <a id="cal-btn" class="btn mt-4" href="#result">CALCULATE</a>
@@ -149,12 +212,12 @@
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">BONE<br>STRUCTURE</span>
-                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                        <input id="bone-structure" type="text" class="form-control input" value="0 / 30" disabled>
                     </div>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">MUSCLE<br>INSERTION</span>
-                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                        <input id="muscle-insertion" type="text" class="form-control input" value="0 / 30" disabled>
                     </div>
 
                     <div class="input-group mt-4">

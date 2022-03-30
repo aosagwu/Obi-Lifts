@@ -4,7 +4,22 @@ var speed = 10;
 
 function calculate() {
     // Calculation
-    setResultValue(0, 85); 
+    var muscleInsertion = muscleInsertionCal();
+    var d4 = (($("#weight-input").val() / 2.2046) * (1 - ($("#bodyfat-input").val() / 100)) / Math.pow(($("#height-select :selected").val() / 100), 2));
+    console.log(muscleInsertion);
+
+    // Check Value
+    if(isNaN(muscleInsertion))
+        muscleInsertion = 0;
+
+    // Insert Values
+    $("#muscle-insertion").val(muscleInsertion + " / 30");
+
+    setResultValue(0, muscleInsertion); 
+}
+
+function muscleInsertionCal() {
+    return parseInt($("#abs-select :selected").val()) + parseInt($("#chest-select :selected").val()) + parseInt($("#bicep-select :selected").val()) + parseInt($("#deltoid-select :selected").val());
 }
 
 /* A recursive function to increase the number */
