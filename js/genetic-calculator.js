@@ -1,4 +1,4 @@
-document.getElementById("cal-btn").addEventListener("click", calculate);
+$("#cal-btn").on("click", calculate);
 
 let speed = 100;
 
@@ -97,7 +97,6 @@ function shoulderWaistValue() {
 function muscleMassCal() {
     var ffmi = parseInt(($("#weight-input").val() / 2.2046) * (1 - ($("#bodyfat-input").val() / 100)) / Math.pow(($("#height-select :selected").val() / 100), 2));
 
-    console.log(ffmi);
     if(ffmi < 18)
         return 0;
     else if(ffmi >= 18 && ffmi <= 20)

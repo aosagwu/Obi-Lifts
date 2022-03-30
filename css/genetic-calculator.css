@@ -76,7 +76,7 @@
     color: black;
 }
 
-#cal-btn {
+#cal-btn, #try-btn {
     width: 100%;
     background-color: #FFFB00;
     color: black;
@@ -86,7 +86,7 @@
     border-radius: 0;
 }
 
-#cal-btn:hover {
+#cal-btn:hover, #try-btn:hover {
     background-color: black;
     color: white;
     transition: 1s;
