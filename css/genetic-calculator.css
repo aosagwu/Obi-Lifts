@@ -31,51 +31,6 @@
     padding-bottom: 100px;
 }
 
-.tile {
-    background-color: white;
-    padding: 50px;
-    padding-bottom: 75px;
-    box-shadow: 0px 0px 20px black;
-}
-
-.tile p, #result p {
-    font-family: 'Kanit', sans-serif;
-    letter-spacing: 0.25em;
-}
-
-.input {
-    width: 100%;
-    padding: 15px;
-    border: 2px solid black;
-    border-radius: 0;
-    font-family: 'Kanit', sans-serif;
-    letter-spacing: 0.25em;
-}
-
-.input-group {
-    font-family: 'Kanit', sans-serif;
-    letter-spacing: 0.25em;
-    border: 0;
-    border-radius: 0;
-    margin: 0;
-}
-
-.input-group .input-group-text {
-    margin: 0;
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    border-right: 0;
-    border-radius: 0;
-    height: 100%;
-    padding: 15px;
-}
-
-.input-group .form-control {
-    border: 2px solid black;
-    color: black;
-}
-
 #cal-btn, #try-btn {
     width: 100%;
     background-color: #FFFB00;
@@ -95,6 +50,10 @@
 #result {
     margin: 0;
     padding-bottom: 75px;
+    background-image: url("../img/black-background-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 #result-value {

@@ -1,0 +1,30 @@
+#title {
+    padding: 25px;
+    padding-top: 75px;
+    padding-bottom: 200px;
+    width: 100%;
+    margin: 0;
+    background-image: url("../img/black-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#title h1 {
+    font-size: 2.5em;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.15em;
+    color: white;
+    width: 100%;
+}
+
+#title p {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.5em;
+    color: white;
+    width: 100%;
+}
+
+#request-section {
+    
+}

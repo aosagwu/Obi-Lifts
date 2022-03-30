@@ -8,6 +8,7 @@
         <title>Genetics Calculator</title>
 
         <!--Logo-->
+        <link rel="icon" href="favicon.io">
         
         <!--CSS-->
         <link rel="stylesheet" href="css/layout.css">
@@ -30,15 +31,21 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <nav class="navbar navbar-expand-md">
-                        <a class="navbar-brand" href="">OBI LIFTS</a>
+                        <a class="navbar-brand" href="index.html">OBI LIFTS</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html#request">REQUEST</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        REQUEST
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="request-celebrity-genetics.html">CELEBRITY GENETICS</a>
+                                        <a class="dropdown-item" href="#">EPISODE</a>
+                                    </div>
                                 </li>
                                 <!-- <li class="nav-item active">
                                     <a class="nav-link" href="#">CONTACT</a>
