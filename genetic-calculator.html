@@ -112,42 +112,42 @@
                         <input id="bodyfat-input" type="number" class="form-control input" value="15" min="3" max="40" step="1">
                     </div>
 
-                    <select class="select input mt-4">
+                    <select id="bodyfat-select" class="select input mt-4">
                         <option value="" selected="" disabled="" hidden="">BODY FAT DISTRIBUTION</option>
-                        <option value="">I LOSE / GAIN BODYFAT EVENLY ACROSS MY WHOLE BODY</option>
-                        <option value="">I STORE MORE FAT IN MY LOWER BODY</option>
-                        <option value="">SOMETHING IN THE MIDDLE, KIND OF A COMBO OF THE ABOVE OPTION</option>
-                        <option value="">I STORE MORE FAT IN MY UPPER BODY, BUT MY LEFS STAY LEAN</option>
-                        <option value="">MY BODY FAT LOOKS LIKE CRAP ON ME</option>
+                        <option value="10">I LOSE / GAIN BODYFAT EVENLY ACROSS MY WHOLE BODY</option>
+                        <option value="7.5">I STORE MORE FAT IN MY LOWER BODY</option>
+                        <option value="5">SOMETHING IN THE MIDDLE, KIND OF A COMBO OF THE ABOVE OPTION</option>
+                        <option value="2.5">I STORE MORE FAT IN MY UPPER BODY, BUT MY LEFS STAY LEAN</option>
+                        <option value="0">MY BODY FAT LOOKS LIKE CRAP ON ME</option>
                     </select>
 
-                    <select class="select input mt-4">
+                    <select id="metabolism-select" class="select input mt-4">
                         <option value="" selected="" disabled="" hidden="">METABOLISM</option>
-                        <option value="">IT'S HARD FOR ME TO GO ABOVE 12% BODY FAT</option>
-                        <option value="">I GET LEAN FAIRLY EASILY</option>
-                        <option value="">FAT LOSS IS NORMAL FOR ME</option>
-                        <option value="">FAT LOSS IS HARD FOR ME</option>
-                        <option value="">I CAN'T LOSE FAT TO SAVE MY LIFE</option>
+                        <option value="10">IT'S HARD FOR ME TO GO ABOVE 12% BODY FAT</option>
+                        <option value="7.5">I GET LEAN FAIRLY EASILY</option>
+                        <option value="5">FAT LOSS IS NORMAL FOR ME</option>
+                        <option value="2.5">FAT LOSS IS HARD FOR ME</option>
+                        <option value="0">I CAN'T LOSE FAT TO SAVE MY LIFE</option>
                     </select>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">WRIST<br>CIRCUMFERENCE<br>(INCHES)</span>
-                        <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
+                        <input id="wrist-input" type="number" class="form-control input" value="6.87" min="1" max="999" step="0.1">
                     </div>
-                    
+
                     <div class="input-group mt-4">
                         <span class="input-group-text">ANKLE<br>CIRCUMFERENCE<br>(INCHES)</span>
-                        <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
+                        <input id="ankle-input" type="number" class="form-control input" value="8.78" min="1" max="999" step="0.1">
                     </div>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">SHOULDER<br>WIDTH<br>(ANY UNIT)</span>
-                        <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
+                        <input id="shoulder-input" type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
                     </div>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">WAIST WIDTH<br>(ANY UNIT)</span>
-                        <input type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
+                        <input id="waist-input" type="number" class="form-control input" value="1" min="1" max="999" step="0.1">
                     </div>
 
                     <select id="abs-select" class="select input mt-4">
@@ -207,12 +207,12 @@
                 <div class="tile">
                     <div class="input-group">
                         <span class="input-group-text">MUSCLE<br>MASS</span>
-                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                        <input id="muscle-mass" type="text" class="form-control input" value="0 / 30" disabled>
                     </div>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">BONE<br>STRUCTURE</span>
-                        <input id="bone-structure" type="text" class="form-control input" value="0 / 30" disabled>
+                        <input id="bone-structure" type="text" class="form-control input" value="0 / 20" disabled>
                     </div>
 
                     <div class="input-group mt-4">
@@ -222,12 +222,12 @@
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">BODY FAT<br>DISTRI.</span>
-                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                        <input id="bodyfat-distribution" type="text" class="form-control input" value="0 / 10" disabled>
                     </div>
 
                     <div class="input-group mt-4">
                         <span class="input-group-text">METABOLISM</span>
-                        <input type="text" class="form-control input" value="0 / 30" disabled>
+                        <input id="metabolism" type="text" class="form-control input" value="0 / 10" disabled>
                     </div>
                 </div>
             </div>
